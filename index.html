@@ -14,9 +14,40 @@
 <script>
 function mostrarNome() {
     let nome = document.getElementById("nome").value;
-    document.getElementById("mensagem").innerHTML = "Teu nome é, " + nome + "? nome de baitolakKKKKKKKKKKKK";
-    <img src="https://media.tenor.com/ShXqrVOXsM0AAAAj/scuba-scuba-dance.gif" width="300">
+
+    document.getElementById("mensagem").innerHTML =
+        "Teu nome é " + nome + "? nome de baitolaKKKKKkkkkkkkk";
+
+    document.body.style.animation = "shake 0.5s infinite";
 }
+
+var style = document.createElement("style");
+
+style.innerHTML = `
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+`;
+
+document.head.appendChild(style);
 </script>
 
 </body>
