@@ -15,9 +15,9 @@
 
 <body>
 
-<h2 id="titulo">Qual é o seu nome?</h2>
+<h2>Qual é o seu nome?</h2>
 
-<input id="nome" type="text" placeholder="Insira seu nome" maxlength="40">
+<input id="nome" type="text" placeholder="Insira seu nome" maxlength="20">
 
 <button onclick="mostrarNome()">Enviar</button>
 
@@ -26,12 +26,10 @@
 <script>
 function mostrarNome() {
     let nome = document.getElementById("nome").value;
-
-    document.getElementById("titulo").innerHTML = "TEU NOME É " + nome + "? NOME DE VIADO KKKKKKKKKKKKK";
+    document.getElementById("mensagem").innerHTML = "teu nome é " + nome + "? NOME DE VIADO KKKKKKKKKKK";
+    <img src="https://media.tenor.com/ShXqrVOXsM0AAAAj/scuba-scuba-dance.gif" width="300">
 }
 </script>
 
-    <img src="https://media.tenor.com/ShXqrVOXsM0AAAAj/scuba-scuba-dance.gif" width="300">
-    
 </body>
 </html>
