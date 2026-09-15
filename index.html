@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <style>
+        body {
+            text-align: left;
+        }
+
+        input {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
 <body>
 
-<h2>Qual é o seu nome?</h2>
+<h2 id="titulo">Qual é o seu nome?</h2>
 
-<img src="https://media.tenor.com/ShXqrVOXsM0AAAAj/scuba-scuba-dance.gif" width="300">
+<input id="nome" type="text" placeholder="Insira seu nome" maxlength="20">
 
-<input id="nome" type="text" placeholder="Insira seu nome">
 <button onclick="mostrarNome()">Enviar</button>
 
 <p id="mensagem"></p>
@@ -14,9 +26,12 @@
 <script>
 function mostrarNome() {
     let nome = document.getElementById("nome").value;
-    document.getElementById("mensagem").innerHTML = "Tu é gay, " + nome + "kkkkkkkk";
+
+    document.getElementById("titulo").innerHTML = "Olá, " + nome + "!";
 }
 </script>
 
+    <img src="https://media.tenor.com/ShXqrVOXsM0AAAAj/scuba-scuba-dance.gif" width="300">
+    
 </body>
 </html>
